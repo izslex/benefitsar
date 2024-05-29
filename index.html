@@ -6,6 +6,7 @@
         <link rel="icon" href="./favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="./css/reset.min.css">
         <link rel="stylesheet" href="./css/main.min.css">
+        <script src="./scripts/main.js" defer></script>
         <title>Benefitsar</title>
     </head>
     <body>
@@ -15,23 +16,16 @@
             </div>
             <div class="header__socials">
                 <span>Свяжитесь с нами<br/>в мессенджерах</span>
-                <a href="https://t.me/BenInfoNdsBot">
-                    <img src="./img/contact-1.svg"/>
-                </a>
-                <a href="https://api.whatsapp.com/send/?phone=74951211337">
-                    <img src="./img/contact-2.svg"/>
-                </a>
-                <a href="https://vk.com/im?media=&sel=-203978317">
-                    <img src="./img/contact-3.svg"/>
-                </a>
-                <a href="mailto:beninfonds@yandex.ru">
-                    <img src="./img/contact-4.svg"/>
-                </a>
+                <div class="socials socials--header">
+                    <a href="https://t.me/BenInfoNdsBot"><span></span></a>
+                    <a href="https://api.whatsapp.com/send/?phone=74951211337"><span></span></a>
+                    <a href="https://vk.com/im?media=&sel=-203978317"><span></span></a>
+                    <a href="mailto:beninfonds@yandex.ru"><span></span></a>
+                </div>
             </div>
             <div class="header__phone">
                 <a href="tel:+79604446261">+7 (960) 444-62-61</a>
-                <span>Ежедневно 09.00 - 20.00</span>
-                <!-- Сделать динамический сигнал -->
+                <span id="online">Ежедневно 09.00 - 20.00</span>
             </div>
         </header>
         <main>
@@ -45,8 +39,8 @@
                     <li>Юридическая и налоговая защита</li>
                 </ul>
                 <div class="hero__pay">
-                    <a href="/#orders">
-                        Подобрать услугу
+                    <a class="hero__button" href="#orders">
+                        <span>Подобрать услугу</span>
                     </a>
                     <span>
                         Оплата только после результата
@@ -70,6 +64,9 @@
                         <span>гарантия качества<br/>работы - 3 года!</span>
                     </li>
                 </ul>
+                <div class="hero__men">
+                    <img src="./img/men.png" alt=""/>
+                </div>
             </section>
             <section class="orders" id="orders">
                 <h2 class="orders__title">
@@ -87,7 +84,7 @@
                             Обращайтесь - @NDSBenbot
                         </p>
                         <a class="order__button" href="https://t.me/NDSBenbot">
-                            Заказать оптимизацию НДС
+                            <span>Заказать оптимизацию НДС</span>
                         </a>
                     </div>
                     <div class="order">
@@ -101,7 +98,7 @@
                             Обращайтесь - @Yourinformalbot
                         </p>
                         <a class="order__button" href="https://t.me/Yourinformalbot">
-                            Заказать информацию по ИНН
+                            <span>Заказать информацию по ИНН</span>
                         </a>
                     </div>
                     <div class="order">
@@ -115,7 +112,7 @@
                             Обращайтесь - @ZSKBenBot
                         </p>
                         <a class="order__button" href="https://t.me/ZSKBenBot">
-                            Снизить уровень риска
+                            <span>Снизить уровень риска</span>
                         </a>
                     </div>
                 </div>
@@ -147,23 +144,30 @@
                 <img src="./img/logo-dark.svg" alt="Benefitsar logo"/>
             </div>
             <div class="footer__socials">
-                <a href="https://t.me/BenInfoNdsBot">
-                    <img src="./img/footer-1.svg" alt=""/>
-                </a>
-                <a href="https://api.whatsapp.com/send/?phone=74951211337">
-                    <img src="./img/footer-2.svg" alt=""/>
-                </a>
-                <a href="https://vk.com/im?media=&sel=-203978317">
-                    <img src="./img/footer-3.svg" alt=""/>
-                </a>
-                <a href="mailto:beninfonds@yandex.ru">
-                    <img src="./img/footer-4.svg" alt=""/>
-                </a>
+                <div class="socials socials--footer">
+                    <a href="https://t.me/BenInfoNdsBot"><span></span></a>
+                    <a href="https://api.whatsapp.com/send/?phone=74951211337"><span></span></a>
+                    <a href="https://vk.com/im?media=&sel=-203978317"><span></span></a>
+                    <a href="mailto:beninfonds@yandex.ru"><span></span></a>
+                </div>
+                <img class="footer__angle" src="./img/footer-angle.svg" alt=""/>
             </div>
             <p class="footer__contacts">
-                <span>+7 (960)444-62-61</span>
-                <span>BENINFONDS@yandex.ru</span>
+                <a href="tel:+79604446261">
+                    +7 (960)444-62-61
+                </a>
+                <a href="mailto:beninfonds@yandex.ru">
+                    BENINFONDS@yandex.ru
+                </a>
             </p>
         </footer>
+        <div class="decor">
+            <div class="decor__container">
+                <img class="decor__dots" src="./img/decor-dots.svg" alt=""/>
+                <img class="decor__line" src="./img/decor-line.svg" alt=""/>
+                <img class="decor__left" src="./img/decor-left.svg" alt=""/>
+                <img class="decor__right" src="./img/decor-right.svg" alt=""/>
+            </div>
+        </div>
     </body>
 </html>
