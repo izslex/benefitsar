@@ -1028,6 +1028,15 @@ body {
     }
 
     @media (max-width: 640px) {
-        display: none;
+        &__container * {
+            display: none;
+        }
+
+        &__dots {
+            display: initial;
+            right: unset;
+            left: -50px;
+            top: 450px;
+        }   
     }
 }
