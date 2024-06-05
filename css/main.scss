@@ -43,6 +43,15 @@ body {
     &::-webkit-scrollbar-thumb {
         background: #B53131;
     }
+
+    @media (max-width: 640px) {
+        padding-top: 50px;
+        background: #181818;
+
+        & > * {
+            padding-inline: 50px;
+        }
+    }
 }
 
 .header {
@@ -117,6 +126,29 @@ body {
             animation-iteration-count: infinite;
         }
     }
+
+    @media (max-width: 640px) {
+        margin-bottom: 40px;
+
+        &__logo {
+            width: 118px;
+        }
+
+
+        &__socials {
+            display: none;
+        }
+
+        &__phone {
+            & *:first-child {
+                font-size: 16px;
+            }
+
+            & *:last-child {
+                font-size: 10px;
+            }
+        }
+    }
 }
 
 .hero {
@@ -143,9 +175,11 @@ body {
         }
 
         & *::before {
+            content: '';
             width: 24px;
             height: 24px;
-            content: url("../img/check.svg");
+            background: url('../img/check.svg');
+            background-size: 100%;
         }
     }
 
@@ -249,6 +283,83 @@ body {
             right: 0;
             bottom: 0;
             background: linear-gradient(180deg, transparent 75%, #181818);
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: flex;
+        flex-direction: column;
+
+        @for $i from 1 through 4 {
+            & > :nth-child(#{$i}) {
+                order: $i;
+            }
+        }
+
+        &__title {
+            font-size: 29px;
+            max-width: none;
+            margin-bottom: 15px;
+        }
+
+        &__list {
+            font-size: 14px;
+            margin-bottom: 310px;
+
+            & *::before {
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        &__pay {
+            order: 10 !important;
+
+            & > *:last-child {
+                display: none;
+            }
+        }
+
+        &__button {
+            width: 300px;
+            margin-inline: auto;
+            
+            & * {
+                padding-inline: 12px;
+            }
+        }
+
+        &__points {
+            margin-bottom: 15px;
+            grid-template-columns: repeat(2, 1fr);
+
+            .point {
+                gap: 12px;
+                padding: 12px;
+                font-size: 12px;
+                margin: 0 4px 7px 0;
+            
+                & img {
+                    width: 26px;
+                    height: 26px;
+                }
+
+                &:before {
+                    top: 7px;
+                    left: 4px;
+                }
+            }
+        }
+
+        &__men {
+            width: 195px;
+            height: auto;
+            top: unset;
+            bottom: 120px;
+
+            &::after {
+                display: none;
+            }
         }
     }
 }
@@ -730,5 +841,9 @@ body {
         right: -100px;
         top: 900px;
         width: 200px;
+    }
+
+    @media (max-width: 640px) {
+        display: none;
     }
 }
