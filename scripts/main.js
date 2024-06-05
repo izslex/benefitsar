@@ -1,4 +1,13 @@
-'use strict'
+function slider() {
+    const orders = document.querySelector('#orders')
+
+    orders.addEventListener('click', event => {
+        const target = event.target.closest('.order')
+        if (target === null) return
+        const index = [...target.parentElement.children].indexOf(target)
+        orders.dataset.current = index
+    })
+}
 
 function online() {
     const online = document.querySelector('#online')
@@ -49,5 +58,6 @@ function form() {
     })
 }
 
+slider()
 online()
 form()
