@@ -693,13 +693,12 @@ body {
     }
 }
 
-// FIXME
 .decor {
     position: absolute;
     z-index: -10;
     top: 0;
-    margin-inline: -100px;
-    width: calc(100% + 200px);
+    left: 0;
+    right: 0;
 
     &__container {
         position: relative;
@@ -710,26 +709,26 @@ body {
     }
 
     &__dots {
-        right: 0;
+        right: -100px;
         top: 200px;
         width: 297px;
     }
 
     &__line {
-        left: 0;
+        left: -100px;
         top: 200px;
         width: 436px;
     }
 
     &__left {
-        left: 0;
-        top: 250px;
+        left: -100px;
+        top: 2650px;
         width: 175px;
     }
 
     &__right {
-        right: 0;
-        top: 1425px;
+        right: -100px;
+        top: 900px;
         width: 200px;
     }
 }
