@@ -45,7 +45,7 @@ body {
         background: #B53131;
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
         padding-top: 50px;
         background: #181818;
 
@@ -128,7 +128,7 @@ body {
         }
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
         margin-bottom: 40px;
 
         &__logo {
@@ -287,7 +287,19 @@ body {
         }
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 1280px) {
+        &__points {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__men {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
 
@@ -334,7 +346,6 @@ body {
 
         &__points {
             margin-bottom: 15px;
-            grid-template-columns: repeat(2, 1fr);
 
             .point {
                 gap: 12px;
@@ -355,6 +366,7 @@ body {
         }
 
         &__men {
+            display: initial;
             width: 195px;
             height: auto;
             top: unset;
@@ -405,7 +417,7 @@ body {
         }
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
         margin-bottom: 50px;
 
         &__title {
@@ -528,13 +540,7 @@ body {
         }
     }
 
-    @media (max-width: 640px) {
-
-        &__title {
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-
+    @media (max-width: 1024px) {
         &__container {
             gap: 15px;
             overflow: hidden;
@@ -562,13 +568,6 @@ body {
             }
         }
 
-        .order {
-            &__title {
-                font-size: 26px;
-                margin-bottom: 30px;
-            }
-        }
-
         @for $i from 0 through 2 {
             &[data-current='#{$i}'] > &__container {
                 transform: translateX($i * -33.34%);
@@ -576,6 +575,20 @@ body {
             
             &[data-current='#{$i}'] > &__slider > * {
                 margin-left: $i * 33.34%;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__title {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .order {
+            &__title {
+                font-size: 26px;
+                margin-bottom: 30px;
             }
         }
     }
@@ -782,14 +795,7 @@ body {
         font-family: 'Inter';
     }
 
-    @media (max-width: 640px) {
-        margin-bottom: 200px;
-
-        &__title {
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-
+    @media (max-width: 1024px) {
         &__row {
             gap: 15px;
             flex-direction: column-reverse;
@@ -802,6 +808,15 @@ body {
             &:not(:last-child) {
                 margin-bottom: 15px;
             }
+        }
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 200px;
+
+        &__title {
+            font-size: 24px;
+            margin-bottom: 15px;
         }
 
         &__text {
@@ -875,7 +890,7 @@ body {
         transform: translateY(-50%);
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
         background: #EBEBEB;
         padding-block: 30px;
         position: relative;
@@ -969,7 +984,7 @@ body {
         }
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
         &--footer {
             flex-direction: row;
 
@@ -1027,7 +1042,7 @@ body {
         width: 200px;
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
         &__container * {
             display: none;
         }
