@@ -21,10 +21,14 @@
     }
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     color: #FFFFFF;
     font-family: 'Bebas Neue';
-    overflow-x: hidden;
     padding-top: 40px;
     background: linear-gradient(70deg, #181818 83%, #1D1D1D 83%);
 
