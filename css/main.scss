@@ -45,7 +45,7 @@ body {
         background: #B53131;
     }
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         padding-top: 50px;
         background: #181818;
 
@@ -128,7 +128,7 @@ body {
         }
     }
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         margin-bottom: 40px;
 
         &__logo {
@@ -287,19 +287,19 @@ body {
         }
     }
 
-    @media (max-width: 1280px) {
+    @media screen and (max-width: 1279px) {
         &__points {
             grid-template-columns: repeat(2, 1fr);
         }
     }
 
-    @media (max-width: 1024px) {
+    @media screen and (max-width: 1023px) {
         &__men {
             display: none;
         }
     }
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         display: flex;
         flex-direction: column;
 
@@ -417,7 +417,7 @@ body {
         }
     }
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         margin-bottom: 50px;
 
         &__title {
@@ -540,7 +540,7 @@ body {
         }
     }
 
-    @media (max-width: 1024px) {
+    @media screen and (max-width: 1023px) {
         &__container {
             gap: 15px;
             overflow: hidden;
@@ -579,7 +579,7 @@ body {
         }
     }
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         &__title {
             font-size: 24px;
             margin-bottom: 15px;
@@ -654,7 +654,7 @@ body {
         font-family: 'Inter';
     }
 
-    @media (max-width: 1024px) {
+    @media screen and (max-width: 1023px) {
         &__row {
             gap: 15px;
             flex-direction: column-reverse;
@@ -670,7 +670,7 @@ body {
         }
     }
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         margin-bottom: 200px;
 
         &__title {
@@ -749,7 +749,7 @@ body {
         transform: translateY(-50%);
     }
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         background: #EBEBEB;
         padding-block: 30px;
         position: relative;
@@ -843,7 +843,7 @@ body {
         }
     }
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         &--footer {
             flex-direction: row;
 
@@ -901,7 +901,7 @@ body {
         width: 200px;
     }
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         &__container * {
             display: none;
         }
