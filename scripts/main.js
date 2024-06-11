@@ -60,4 +60,4 @@ function form() {
 
 slider()
 online()
-// form()
+form()

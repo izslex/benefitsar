@@ -30,6 +30,7 @@ body {
     color: #FFFFFF;
     font-family: 'Bebas Neue';
     padding-top: 40px;
+    -webkit-tap-highlight-color: transparent;
     background: linear-gradient(70deg, #181818 83%, #1D1D1D 83%);
 
     & > * {
@@ -649,8 +650,8 @@ body {
     }
 
     &__title {
-        width: 690px;
         font-size: 64px;
+        max-width: 690px;
     }
 
     &__next {
@@ -734,6 +735,76 @@ body {
 
             &:hover, &:hover * {
                 background-position-x: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        height: 255px;
+        margin-bottom: 50px;
+
+        &__container {
+            height: 255px;
+        }
+
+        &__page {
+            padding: 35px 50px;
+        }
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__next {
+            margin-inline: auto;
+            font-size: 20px;
+            width: 130px;
+            height: 45px;
+        }
+
+        &__input {
+            position: relative;
+            overflow: hidden;
+            height: 45px;
+    
+            & > :first-child {
+                position: absolute;
+                font-size: 12px;
+                color: #B53131;
+                opacity: 0.5;
+                width: 170px;
+
+                left: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                pointer-events: none;
+
+                will-change: margin-top;
+                transition: margin-top 300ms;
+            }
+    
+            & > :last-child {
+                font-size: 12px;
+                padding-inline: 15px;
+            }
+        }
+
+        &__page[data-valid] &__input > :first-child,
+        &__input > :first-child:has(+ :last-child:focus) {
+            margin-top: -35px;
+        }
+
+        &__select {
+            flex-wrap: wrap;
+            gap: 15px;
+
+            & > label {
+                width: 150px;
+                height: 35px;
+            
+                & > * {
+                    font-size: 20px;
+                }
             }
         }
     }
