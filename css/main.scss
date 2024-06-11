@@ -739,6 +739,12 @@ body {
         }
     }
 
+    @media screen and (max-width: 1023px) {
+        &__input {
+            gap: 65px;
+        }
+    }
+
     @media screen and (max-width: 767px) {
         height: 255px;
         margin-bottom: 50px;
