@@ -139,6 +139,73 @@
                     <span></span>
                 </div>
             </section>
+            <section class="form">
+                <form class="form__container" id="form">
+                    <div class="form__page" data-active>
+                        <h3 class="form__title">
+                            На какую сумму необходимы закрывающих документов?
+                        </h3>
+                        <div class="form__input">
+                            <label for="amount">
+                                Введите сумму в поле
+                            </label>
+                            <input id="amount"/>
+                        </div>
+                        <button class="form__next" type="button" data-action="next">
+                            Ответить
+                        </button>
+                    </div>
+                    <div class="form__page">
+                        <h3 class="form__title">
+                            За какой период нужны документы?
+                        </h3>
+                        <div class="form__select">
+                            <input name="range" type="radio" id="range1" value="Текущий квартал"/>
+                            <label for="range1"><span>Текущий квартал</span></label>
+                            <input name="range" type="radio" id="range2" value="Прошлый квартал"/>
+                            <label for="range2"><span>Прошлый квартал</span></label>
+                            <input name="range" type="radio" id="range3" value="Другой период"/>
+                            <label for="range3"><span>Другой период</span></label>
+                        </div>
+                        <button class="form__next" type="button" data-action="next">
+                            Ответить
+                        </button>
+                    </div>
+                    <div class="form__page">
+                        <h3 class="form__title">
+                            Ранее пользовались подобными услугами?
+                        </h3>
+                        <div class="form__select">
+                            <input name="before" type="radio" id="before1" value="Да"/>
+                            <label for="before1"><span>Да</span></label>
+                            <input name="before" type="radio" id="before2" value="Нет"/>
+                            <label for="before2"><span>Нет</span></label>
+                        </div>
+                        <button class="form__next" type="button" data-action="next">
+                            Ответить
+                        </button>
+                    </div>
+                    <div class="form__page">
+                        <h3 class="form__title">
+                            Как с вами удобнее связаться?
+                        </h3>
+                        <div class="form__input">
+                            <label for="contact">
+                                Оставте номер телефона либо оставьте ваш телеграм
+                            </label>
+                            <input id="contact"/>
+                        </div>
+                        <button class="form__next" type="submit" data-action="next">
+                            Ответить
+                        </button>
+                    </div>
+                    <div class="form__page">
+                        <h3 class="form__title">
+                            Готово!
+                        </h3>
+                    </div>
+                </form>
+            </section>
             <section class="about">
                 <h2 class="about__title">
                     Кто мы?
