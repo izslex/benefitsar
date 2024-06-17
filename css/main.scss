@@ -265,24 +265,21 @@ body {
         align-items: center;
         justify-content: end;
 
-        &:before {
+        &:before, &:after {
             content: '';
+            top: 0;
+            bottom: 0;
             z-index: -1;
             position: absolute;
             background: #B53131;
-            top: 0;
-            bottom: 0;
+        }
+
+        &:before {
             right: 0;
             width: 77.75%;
         }
 
         &:after {
-            content: '';
-            z-index: -1;
-            position: absolute;
-            background: #B53131;
-            top: 0;
-            bottom: 0;
             left: 100%;
             width: 50vw;
         }
