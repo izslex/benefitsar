@@ -280,7 +280,7 @@ body {
         }
 
         &:after {
-            left: 100%;
+            left: 99%;
             width: 50vw;
         }
 
@@ -1182,7 +1182,6 @@ body {
 }
 
 .decor {
-    overflow: hidden;
     position: absolute;
     z-index: -10;
     top: 0;
