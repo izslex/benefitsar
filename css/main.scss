@@ -1030,7 +1030,7 @@ body {
             top: 0;
             bottom: 0;
             left: 0;
-            right: 0;
+            right: -1px;
             background: linear-gradient(90deg, rgba(#B53131, 0.5), #B53131);
         }
     }
@@ -1059,6 +1059,50 @@ body {
         color: #FFFFFF;
         background: #B53131;
         border: 5px #FFFFFF solid;
+    }
+
+    @media screen and (max-width: 767px) {
+        height: 288px;
+
+        &__container {
+            height: 288px;
+            padding: 40px 50px;
+        }
+
+        &__content {
+            max-width: unset;
+            margin-left: unset;
+            position: relative;
+        }
+
+        &__image {
+            right: 0;
+            bottom: 1px;
+            width: unset;
+    
+            &:after {
+                right: 0;
+                bottom: -1px;
+                background: linear-gradient(180deg, rgba(#B53131, 0.6), rgba(#B53131, 0.96) 20%);
+            }
+        }
+
+        &__title {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        &__text {
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        &__button {
+            width: 200px;
+            height: 45px;
+            font-size: 20px;
+            margin-inline: auto;
+        }
     }
 }
 
