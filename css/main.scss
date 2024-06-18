@@ -929,7 +929,7 @@ body {
 
 .offer {
     height: 625px;
-    margin-bottom: 130px;
+    margin-bottom: 80px;
 
     &__container {
         position: absolute;
@@ -997,6 +997,29 @@ body {
         color: #FFFFFF;
         background: #B53131;
         border: 5px #FFFFFF solid;
+    }
+}
+
+.more {
+    margin-bottom: 80px;
+
+    gap: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__text {
+        font-size: 64px;
+    }
+
+    &__links {
+        gap: 35px;
+        display: flex;
+        flex-direction: column;
+    
+        & > * {
+            width: 48px;
+        }
     }
 }
 
