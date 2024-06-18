@@ -1061,18 +1061,26 @@ body {
         border: 5px #FFFFFF solid;
     }
 
-    @media screen and (max-width: 767px) {
-        height: 288px;
-
-        &__container {
-            height: 288px;
-            padding: 40px 50px;
-        }
-
+    @media screen and (max-width: 1023px) {
         &__content {
+            height: 100%;
+
             max-width: unset;
             margin-left: unset;
             position: relative;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        height: 350px;
+
+        &__container {
+            height: 350px;
+            padding: 40px 50px;
         }
 
         &__image {
@@ -1083,7 +1091,7 @@ body {
             &:after {
                 right: 0;
                 bottom: -1px;
-                background: linear-gradient(180deg, rgba(#B53131, 0.6), rgba(#B53131, 0.96) 20%);
+                background: linear-gradient(180deg, rgba(#B53131, 0.6), rgba(#B53131, 0.9) 20%, rgba(#B53131, 0.96) 40%);
             }
         }
 
