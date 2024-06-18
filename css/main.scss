@@ -445,6 +445,16 @@ body {
             }
         }
     }
+
+    @media screen and (max-width: 424px) {
+        .stats {
+            gap: 10px;
+
+            &__container {
+                column-gap: unset;
+            }
+        }
+    }
 }
 
 .how {
@@ -956,7 +966,7 @@ body {
     }
 
     @media screen and (max-width: 767px) {
-        margin-bottom: 200px;
+        margin-bottom: 50px;
 
         &__title {
             font-size: 24px;
@@ -1250,6 +1260,7 @@ body {
 
     & > * {
         position: relative;
+        display: block !important;
 
         &::before {
             content: "";
@@ -1381,5 +1392,11 @@ body {
             left: -50px;
             top: 410px;
         }   
+    }
+
+    @media screen and (max-width: 424px) {
+        &__dots {
+            top: 450px;
+        }
     }
 }
