@@ -287,6 +287,7 @@ body {
         &__title {
             display: flex;
             flex-direction: column;
+            white-space: nowrap;
 
             & > :first-child {
                 font-size: 48px;
@@ -324,6 +325,18 @@ body {
     @media screen and (max-width: 1023px) {
         &__men {
             display: none;
+        }
+
+        .stats {
+            padding-block: 20px;
+
+            &:before {
+                width: 550px;
+            }
+
+            &__container {
+                grid-template-columns: repeat(2, auto);
+            }
         }
     }
 
@@ -410,7 +423,6 @@ body {
                 & > :first-child,
                 & > :last-child {
                     font-size: 36px;
-                    white-space: nowrap;
                 }
             }
 
@@ -1268,6 +1280,12 @@ body {
         right: -100px;
         top: 900px;
         width: 200px;
+    }
+
+    @media screen and (max-width: 1023px) {
+        &__right {
+            top: 1000px;
+        }
     }
 
     @media screen and (max-width: 767px) {
