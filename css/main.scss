@@ -395,8 +395,8 @@ body {
 
         .stats {
             gap: 40px;
+            padding: unset;
             margin-right: -35px;
-            padding-right: unset;
 
             &:before {
                 bottom: unset;
